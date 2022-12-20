@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #201b2c;
+}
+
+.Calculadora{
+    position: absolute;
+    top: 9%;
+}
+
+div.container{
+    background-color: #2f2841;
+    border-radius: 55px;
+    padding: 30px;
+    position: absolute;
+    top: 40%;
+}
+
+div.container{
+    font-size: 22px;
+    color: #00ff88(7, 7, 7);
+}
+
+div.container form{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+
+div.container form input{
+    font-size: 16px;
+    padding: 10px;
+    text-align: right;
+    color: #00ff88(80,80,80);
+    max-width: 100px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(150,150,150);
+    outline: 0;
+    transition: border 0.5s;
+}
+
+div.container form input:hover,
+div.container form input:focus,
+div.container form input:valid{
+    border: 1px solid mediumseagreen;
+}
+
+div.container form 
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+div.container div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.container div button{
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: mediumseagreen;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.container div span{
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 764px){
+
+    div.container{
+        width: 100%;
+        border-radius: 0;
+        font-size: 16px;
+    }
+
+    div.container form input{
+        font-size: 12px;
+        max-width: 60px;
+    }
+
+    div.container div button{
+        font-size: 12px;
+    }
+}
